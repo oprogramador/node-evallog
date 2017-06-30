@@ -6,3 +6,36 @@
 
 [![NPM status](https://nodei.co/npm/evallog.png?downloads=true&stars=true)](https://npmjs.org/package/evallog
 )
+
+## How to install?
+```npm install -g evallog```
+
+## usage
+This library evaluates passed arguments and logs them.
+
+### using default logger (console.log)
+```
+const x = {
+ aVeryLongPropertyName: true,
+ anotherVeryLongPropertyName: false,
+};
+
+require('evallog')('x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
+```
+Output:
+```
+```
+
+
+### using custom logger
+```
+const x = {
+ aVeryLongPropertyName: true,
+ anotherVeryLongPropertyName: false,
+};
+
+function myLogger() {
+}
+
+require('evallog')(myLogger, 'x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
+```
