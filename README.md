@@ -4,5 +4,5 @@
 [![Build Status](https://travis-ci.org/oprogramador/node-evallog.svg?branch=master)](https://travis-ci.org/oprogramador/node-evallog
 )
 
-[![NPM status](https://nodei.co/npm/node-evallog.png?downloads=true&stars=true)](https://npmjs.org/package/node-evallog
+[![NPM status](https://nodei.co/npm/evallog.png?downloads=true&stars=true)](https://npmjs.org/package/evallog
 )

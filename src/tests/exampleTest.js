@@ -1,4 +1,4 @@
-import expect from 'node-evallog/tests/expect';
+import expect from 'evallog/tests/expect';
 
 describe('test', () => {
   it('works', () => {

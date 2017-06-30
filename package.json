@@ -1,5 +1,5 @@
 {
-  "name": "node-evallog",
+  "name": "evallog",
   "version": "1.0.0",
   "description": "JS library for simple logging expressions",
   "main": "build/index.js",
