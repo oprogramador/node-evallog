@@ -20,10 +20,13 @@ const x = {
  anotherVeryLongPropertyName: false,
 };
 
-require('evallog')('x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
+require('evallog').default('x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
 ```
 Output:
 ```
+{ 'x.aVeryLongPropertyName': true,
+  'x.anotherVeryLongPropertyName': false,
+  'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName': false }
 ```
 
 
@@ -37,5 +40,5 @@ const x = {
 function myLogger() {
 }
 
-require('evallog')(myLogger, 'x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
+require('evallog').default(myLogger, 'x.aVeryLongPropertyName', 'x.anotherVeryLongPropertyName', 'x.aVeryLongPropertyName && x.anotherVeryLongPropertyName');
 ```
